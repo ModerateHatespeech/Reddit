@@ -19,7 +19,7 @@ Required config.json file:
   "username": "REDDIT_BOT_ACCOUNT_USERNAME",
   "password": "REDDIT_BOT_ACCOUNT_PASSWORD",
   "api_token": "MODERATE_HATESPEECH_API_TOKEN",
-  "threshold": CONFIDENCE_THRESHOLD (float)
+  "threshold": 1
 }
 ```
 
