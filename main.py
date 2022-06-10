@@ -37,7 +37,7 @@ def login(config):
 def moderate(text, thresh):
   """ Call API and return response list with boolean & confidence score """
   text = re.sub(r'>[^\n]+', "", text) # strip out quotes
-  response = requests.post("https://api.moderatehatespeech.com/api/v1/toxic/", json={"token":config['api_token'], "text":text}).json()
+  response = requests.post("https://api.moderatehatespeech.com/api/v1/moderate/", json={"token":config['api_token'], "text":text}).json()
 
   if response['response'] != "Success":
     if response['response'] != "Authentication failure":
